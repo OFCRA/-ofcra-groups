@@ -75,7 +75,7 @@ class CfgGroups {
 		name="OPFOR";
 
 		class OFAredforCDC {
-			name="OFCRA_R CDC+MED+RIF";
+			name="OFCRA_R CDC+MED+2xRIF";
 
 			class Unit0 {
 				description="Chef de Camp";
