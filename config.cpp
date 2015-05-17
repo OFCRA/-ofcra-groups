@@ -11,103 +11,162 @@ class CfgPatches 		{
 
 class CfgGroups {
 	class West {
-		name="BLUEFOR";
+		class OFCRA {
+			name="OFCRA";
+			
+			class Infantry {
+				name = "Infantry";
+				
+				class CDC_LIGHT {
+					name = "CDC + fusil. - 3 unit.";
+					
+					class Unit01 {
+						vehicle = "B_officer_F";
+						rank = "SERGEANT";
+						side = 1;
+						position[] = {0,0,0};
+					};
+					
+					class Unit02 {
+						vehicle = "B_medic_F";
+						rank = "PRIVATE";
+						side = 1;
+						position[]={-1,-1,0};
+					};
+					
+					class Unit03 {
+						vehicle="B_Soldier_F";
+						rank="PRIVATE";
+						side=1;						
+						position[]={1,-1,0};
 
-		class OFAbleuforCDC {
-			name="OFCRA_B CDC+MED+RIF";
+					};
+					
+					class Unit04 {
+						vehicle = "B_Soldier_F";
+						rank = "SERGEANT";
+						side = 1;
+						position[] = {2,-2,0};
+					};					
+				};
+				
+				class CDC_HEAVY {
+					name = "CDC + MG - 3 unit.";
 
-			class Unit0 {
-				description="Chef de Camp";
-				side=1;
-				vehicle="B_officer_F";
-				rank="SERGEANT";
-				position[]={0,5,0};
-			};
-       
-			class Unit1 {
-				description="Medecin";
-				side=1;
-				vehicle="B_medic_F";
-				rank="PRIVATE";
-				position[]={0,5,0};
-			};
-       
-			class Unit2 {
-				description="Fusilier";
-				side=1;
-				vehicle="B_Soldier_F";
-				rank="PRIVATE";
-				position[]={7,0,0};
-			};
-		};
-		
-		
-		class OFAbleuforReco {
-			name="OFCRA_B Reco CDE+SPOT+SNIP";
+					class Unit01 {
+						vehicle = "B_officer_F";
+						rank = "SERGEANT";
+						side = 1;
+						position[] = {0,0,0};
+					};
+					
+					class Unit03 {
+						vehicle = "B_support_AMG_F";
+						rank = "PRIVATE";
+						side = 1;
+						position[] = {2,-2,0};
+					};
+					
+					class Unit04 {
+						vehicle = "B_support_AMG_F";
+						rank = "PRIVATE";
+						side = 1;
+						position[]={-1,-1,0};
+					};
+					
+					class Unit02 {
+						vehicle="B_support_GMG_F";
+						rank="CORPORAL";
+						side=1;						
+						position[]={1,-1,0};
 
-			class Unit0 {
-				description="Chef d'Equipe";
-				side=1;
-				vehicle="B_Soldier_TL_F";
-				rank="SERGEANT";
-				position[]={0,5,0};
-			};
-       
-			class Unit1 {
-				description="Sniper";
-				side=1;
-				vehicle="B_sniper_F";
-				rank="PRIVATE";
-				position[]={0,5,0};
-			};
-       
-			class Unit2 {
-				description="Spotter";
-				side=1;
-				vehicle="B_spotter_F";
-				rank="PRIVATE";
-				position[]={7,0,0};
-			};
-		};
-	};
-	
-	class East {
-		name="OPFOR";
-
-		class OFAredforCDC {
-			name="OFCRA_R CDC+MED+RIF";
-
-			class Unit0 {
-				description="Chef de Camp";
-				side=0;
-				vehicle="O_officer_F";
-				rank="SERGEANT";
-				position[]={0,5,0};
-			};
-       
-			class Unit1 {
-				description="Medecin";
-				side=0;
-				vehicle="O_medic_F";
-				rank="PRIVATE";
-				position[]={0,5,0};
-			};
-       
-			class Unit2 {
-				description="Fusilier";
-				side=0;
-				vehicle="O_Soldier_F";
-				rank="PRIVATE";
-				position[]={7,0,0};
+					};
+					
+				};
+				
+				class COMBAT_LIGHT {
+					name = "Combat - grenad. + MG legere - 6 unit.";
+				};
+				
+				class COMBAT_HEAVY {
+					name = "Combat - grenad. + MG lourde - 6 unit.";
+				};
+				
+				class COMBAT_ATHEAVY {
+					name = "Combat - grenad. + AT - 6 unit.";
+				};
+				
+				class COMBAT_FULL {
+					name = "Combat - complet - 8 unit.";
+				};
+				
+				class RECO_LIGHT {
+					name = "Reco - 2 unit.";
+				};
+				class RECO_HEAVY {
+					name = "Reco - 5 unit.";
+				};
 			};
 			
-			class Unit3{
-				description="Fusilier";
-				side=0;
-				vehicle="O_Soldier_F";
-				rank="PRIVATE";
-				position[]={9,0,0};
+			class Armored {
+				name = "Armored";
+				
+				class ARMORED_LIGHT {
+					name = "Equipage - 2 unit.";
+					
+					class Unit01 {
+						vehicle = "B_soldier_UAV_F";
+						rank = "SERGEANT";
+						side = 1;
+						position[] = {0,0,0};
+					};
+					
+					class Unit03 {
+						vehicle = "B_crew_F";
+						rank = "PRIVATE";
+						side = 1;
+						position[] = {2,-2,0};
+					};
+				};
+				
+				class ARMORED_MEDIUM {
+					name = "Equipage - 3 unit.";
+				};
+				
+				class ARMORED_HEAVY {
+					name = "Equipage - 4 unit.";
+				};
+				
 			};
+			
+			
+			class Air {
+				name = "Air";
+				
+				class AIR_LIGHT {
+					name = "Equipage - 2 unit.";
+					
+					class Unit01 {
+						vehicle = "B_Helipilot_F";
+						rank = "SERGEANT";
+						side = 1;
+						position[] = {0,0,0};
+					};
+					
+					class Unit03 {
+						vehicle = "B_helicrew_F";
+						rank = "PRIVATE";
+						side = 1;
+						position[] = {2,-2,0};
+					};
+				};
+				
+				class AIR_HEAVY {
+					name = "Equipage - 4 unit.";
+				};
+				
+			};
+					
 		};
 	};
 };  
