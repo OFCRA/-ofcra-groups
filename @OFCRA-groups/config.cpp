@@ -1370,7 +1370,7 @@ class CfgGroups {
 					};					
 					class Unit04 {
 						vehicle="O_recon_F";
-						rank="CORPORAL";
+						rank = "CORPORAL";
 						side=0;						
 						position[]={0,-5,0};
 					};
@@ -1397,7 +1397,7 @@ class CfgGroups {
 					};					
 					class Unit04 {
 						vehicle="O_recon_F";
-						rank="PRIVATE";
+						rank="CORPORAL";
 						side = 0;						
 						position[]={-5,-5,0};
 					};
@@ -1424,7 +1424,7 @@ class CfgGroups {
 					};					
 					class Unit04 {
 						vehicle="O_Soldier_F";
-						rank="PRIVATE";
+						rank="CORPORAL";
 						side = 0;						
 						position[]={-5,-5,0};
 					};
@@ -1920,7 +1920,7 @@ class CfgGroups {
 					};					
 					class Unit04 {
 						vehicle="O_recon_F";
-						rank="PRIVATE";
+						rank="CORPORAL";
 						side = 0;						
 						position[]={-5,-5,0};
 					};
@@ -1953,7 +1953,7 @@ class CfgGroups {
 					};					
 					class Unit04 {
 						vehicle="O_Soldier_F";
-						rank="PRIVATE";
+						rank="CORPORAL";
 						side = 0;						
 						position[]={-5,-5,0};
 					};
