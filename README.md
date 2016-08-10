@@ -3,7 +3,7 @@
 This add-on provides OFCRA groups in editor: it is an mission-editing only addon.
 It can be downloaded from OFCRA Arma3Sync repository.
 
-##Get mode info
+##Get more info
 Visit  [OFCRA forum](http://ofcrav2.org/forum/index.php?action=forum)
 
 ##Do you want to contribute ?
